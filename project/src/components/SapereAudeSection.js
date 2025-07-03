@@ -7,8 +7,8 @@ const SapereAudeSection = () => {
 
   const [videoLinks, setVideoLinks] = useState([
     { id: 1, title: 'Conozca la Ley 233 La Paz Bolivia', url: 'https://www.youtube.com/embed/q58MyXRhRfU?si=Q0g05ASoMZ9agFno' },
-    { id: 2, title: 'Claves del Derecho Civil', url: 'https://www.youtube.com/embed/3tmd-KfgRR8' },
-    { id: 3, title: 'Recursos Administrativos Explicados', url: 'https://www.youtube.com/embed/oHg5SJYRHA0' },
+    { id: 2, title: 'Consejos Para Evitar un Proceso de Fiscalización', url: 'https://www.youtube.com/embed/expdGG32Vg8?si=tqC3PV6Te7Fb0hwV' },
+    { id: 3, title: '¿Puede el Gobierno Autónomo Municipal de La Paz demoler inmuebles sin autorización judicial?', url: 'https://www.youtube.com/embed/ryk6KQn8NLc?si=e--QBt64LfR7UG93' },
   ]);
   const [pdfFiles, setPdfFiles] = useState([]);
 
