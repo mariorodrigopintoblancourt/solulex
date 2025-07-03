@@ -19,7 +19,7 @@ const LayoutHeader = ({ setCurrentPage }) => {
         <button onClick={() => handleNavigationClick('home')} className="text-gray-600 hover:text-gray-900 transition-colors text-lg">Inicio</button>
         <button onClick={() => handleNavigationClick('services')} className="text-gray-600 hover:text-gray-900 transition-colors text-lg">Servicios</button>
         <button onClick={() => handleNavigationClick('sapereAude')} className="text-gray-600 hover:text-gray-900 transition-colors text-lg">Proyecto Sapere Aude</button>
-        <button onClick={() => handleNavigationClick('about')} className="text-gray-600 hover:text-gray-900 transition-colors text-lg">Nosotros</button>
+        <button onClick={() => handleNavigationClick('about')} className="text-gray-600 hover:text-gray-900 transition-colors text-lg">Mi Perfil</button>
         <button onClick={() => handleNavigationClick('contact')} className="text-gray-600 hover:text-gray-900 transition-colors text-lg">Contacto</button>
         <button onClick={() => handleNavigationClick('policies')} className="text-gray-600 hover:text-gray-900 transition-colors text-lg">Políticas</button>
       </nav>
