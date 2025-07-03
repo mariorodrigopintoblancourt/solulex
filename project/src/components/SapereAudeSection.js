@@ -6,7 +6,7 @@ const SapereAudeSection = () => {
   const isAdmin = true; // Cambiar a 'false' para deshabilitar la edición
 
   const [videoLinks, setVideoLinks] = useState([
-    { id: 1, title: 'Introducción al Derecho Penal', url: 'https://www.youtube.com/embed/dQw4w9WgXcQ' },
+    { id: 1, title: 'Conozca la Ley 233 La Paz Bolivia', url: 'https://www.youtube.com/embed/q58MyXRhRfU?si=Q0g05ASoMZ9agFno' },
     { id: 2, title: 'Claves del Derecho Civil', url: 'https://www.youtube.com/embed/3tmd-KfgRR8' },
     { id: 3, title: 'Recursos Administrativos Explicados', url: 'https://www.youtube.com/embed/oHg5SJYRHA0' },
   ]);
