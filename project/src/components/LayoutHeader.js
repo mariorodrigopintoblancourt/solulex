@@ -38,7 +38,7 @@ const LayoutHeader = ({ setCurrentPage }) => {
           <button onClick={() => handleNavigationClick('home')} className="block w-full text-left px-6 py-2 text-gray-800 hover:bg-gray-100 transition-colors">Inicio</button>
           <button onClick={() => handleNavigationClick('services')} className="block w-full text-left px-6 py-2 text-gray-800 hover:bg-gray-100 transition-colors">Servicios</button>
           <button onClick={() => handleNavigationClick('sapereAude')} className="block w-full text-left px-6 py-2 text-gray-800 hover:bg-gray-100 transition-colors">Proyecto Sapere Aude</button>
-          <button onClick={() => handleNavigationClick('about')} className="block w-full text-left px-6 py-2 text-gray-800 hover:bg-gray-100 transition-colors">Nosotros</button>
+          <button onClick={() => handleNavigationClick('about')} className="block w-full text-left px-6 py-2 text-gray-800 hover:bg-gray-100 transition-colors">Mi Perfil</button>
           <button onClick={() => handleNavigationClick('contact')} className="block w-full text-left px-6 py-2 text-gray-800 hover:bg-gray-100 transition-colors">Contacto</button>
           <button onClick={() => handleNavigationClick('policies')} className="block w-full text-left px-6 py-2 text-gray-800 hover:bg-gray-100 transition-colors">Políticas</button>
         </div>
