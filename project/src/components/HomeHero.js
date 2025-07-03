@@ -18,7 +18,7 @@ const HomeHero = ({ setCurrentPage }) => {
             onClick={() => setCurrentPage('services')}
             className="bg-blue-600 text-white px-6 py-3 sm:px-8 sm:py-4 rounded-xl text-lg sm:text-xl font-semibold hover:bg-blue-700 transition-all duration-300 shadow-lg transform hover:scale-105 w-full sm:w-auto"
           >
-            Nuestros Servicios
+            Servicios
           </button>
           <button
             onClick={() => setCurrentPage('contact')}
