@@ -73,7 +73,7 @@ const SapereAudeSection = () => {
           </div>
           <div className="md:w-1/2">
             <p className="text-base sm:text-lg text-gray-700 leading-relaxed mb-4">
-              Bienvenido al "Proyecto Sapere Aude", un espacio dedicado a la difusión de conocimiento jurídico y análisis de temas relevantes. Aquí encontrarás una colección de videos y documentos en PDF que te ayudarán a comprender mejor el mundo del derecho.
+              Bienvenido al "Proyecto Sapere Aude", un espacio que te invita a la emancipación intelectual y está también dedicado a la difusión de conocimiento jurídico y análisis de temas relevantes. Aquí encontrarás una colección de videos y documentos en PDF que te ayudarán a mejorar tu razonamiento y también a comprender mejor el mundo del derecho.
             </p>
             <p className="text-base sm:text-lg text-gray-700 leading-relaxed">
               Este es un recurso vivo que se actualizará constantemente con nuevo contenido para mantenerte informado y al día con las últimas novedades legales.
