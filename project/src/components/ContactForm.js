@@ -16,12 +16,6 @@ const ContactForm = () => {
     }));
   };
 
-  const handleSubmit = () => {
-    console.log('Formulario de consulta/cita enviado:', formData);
-    alert('¡Tu consulta ha sido enviada! Me pondré en contacto contigo para agendar una cita.');
-    setFormData({ fullName: '', phone: '', briefConsultation: '', file: null });
-  };
-
   return (
     <section className="py-16 bg-white px-6">
       <div className="max-w-3xl mx-auto">
@@ -32,7 +26,6 @@ const ContactForm = () => {
             method="POST"
             data-netlify="true"
             netlify-honeypot="bot-field"
-            onSubmit={handleSubmit}
             className="space-y-6"
             encType="multipart/form-data"
           >
@@ -48,7 +41,6 @@ const ContactForm = () => {
                 name="fullName"
                 value={formData.fullName}
                 onChange={handleChange}
-              <input type="hidden" name="fullName" value={formData.fullName} />
                 className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-all duration-200 text-lg"
                 placeholder="Tu nombre completo"
                 required
@@ -62,7 +54,6 @@ const ContactForm = () => {
                 name="phone"
                 value={formData.phone}
                 onChange={handleChange}
-              <input type="hidden" name="phone" value={formData.phone} />
                 className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-all duration-200 text-lg"
                 placeholder="Ej: +591 60558168"
                 required
@@ -81,7 +72,6 @@ const ContactForm = () => {
                 required
               ></textarea>
                   
-              <input type="hidden" name="briefConsultation" value={formData.briefConsultation} />
             </div>
             <div>
               <label htmlFor="file" className="block text-lg font-medium text-gray-700 mb-2">Adjuntar Documento (PDF)</label>
