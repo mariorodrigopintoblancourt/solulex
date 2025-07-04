@@ -17,7 +17,6 @@ const ContactForm = () => {
   };
 
   const handleSubmit = (e) => {
-    e.preventDefault();
     console.log('Formulario de consulta/cita enviado:', formData);
     alert('¡Tu consulta ha sido enviada! Me pondré en contacto contigo para agendar una cita.');
     setFormData({ fullName: '', phone: '', briefConsultation: '', file: null });
