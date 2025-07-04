@@ -28,7 +28,19 @@ const ContactForm = () => {
       <div className="max-w-3xl mx-auto">
         <h2 className="text-4xl font-bold text-center text-gray-900 mb-12">Consultas y Citas</h2>
         <div className="bg-gray-50 p-8 rounded-2xl shadow-lg border border-gray-200">
-          <form onSubmit={handleSubmit} className="space-y-6">
+          <form
+            name="contacto"
+            method="POST"
+            data-netlify="true"
+            netlify-honeypot="bot-field"
+            onSubmit={handleSubmit}
+            className="space-y-6"
+            encType="multipart/form-data"
+          >
+            <input type="hidden" name="form-name" value="contacto" />
+            <p hidden>
+              <label>No llenar: <input name="bot-field" /></label>
+            </p>
             <div>
               <label htmlFor="fullName" className="block text-lg font-medium text-gray-700 mb-2">Nombre y Apellidos</label>
               <input
@@ -37,6 +49,7 @@ const ContactForm = () => {
                 name="fullName"
                 value={formData.fullName}
                 onChange={handleChange}
+              <input type="hidden" name="fullName" value={formData.fullName} />
                 className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-all duration-200 text-lg"
                 placeholder="Tu nombre completo"
                 required
@@ -50,6 +63,7 @@ const ContactForm = () => {
                 name="phone"
                 value={formData.phone}
                 onChange={handleChange}
+              <input type="hidden" name="phone" value={formData.phone} />
                 className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-all duration-200 text-lg"
                 placeholder="Ej: +591 60558168"
                 required
@@ -67,6 +81,8 @@ const ContactForm = () => {
                 placeholder="Describe brevemente tu consulta o el motivo de tu cita..."
                 required
               ></textarea>
+                  
+              <input type="hidden" name="briefConsultation" value={formData.briefConsultation} />
             </div>
             <div>
               <label htmlFor="file" className="block text-lg font-medium text-gray-700 mb-2">Adjuntar Documento (PDF)</label>
