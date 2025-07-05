@@ -29,73 +29,56 @@ const ContactForm = () => {
             className="space-y-6"
             encType="multipart/form-data"
           >
-            <input type="hidden" name="form-name" value="contacto" />
-            <p style={{ display: 'none' }}>
-              <label>
-                No llenar este campo: <input name="bot-field" />
-              </label>
-            </p>
-            <p hidden>
-              <label>No llenar: <input name="bot-field" /></label>
-            </p>
-            <div>
-              <label htmlFor="fullName" className="block text-lg font-medium text-gray-700 mb-2">Nombre y Apellidos</label>
-              <input
-                type="text"
-                id="fullName"
-                name="fullName"
-                value={formData.fullName}
-                onChange={handleChange}
-                className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-all duration-200 text-lg"
-                placeholder="Tu nombre completo"
-                required
-              />
-            </div>
-            <div>
-              <label htmlFor="phone" className="block text-lg font-medium text-gray-700 mb-2">Teléfono de Contacto</label>
-              <input
-                type="tel"
-                id="phone"
-                name="phone"
-                value={formData.phone}
-                onChange={handleChange}
-                className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-all duration-200 text-lg"
-                placeholder="Ej: +591 60558168"
-                required
-              />
-            </div>
-            <div>
-              <label htmlFor="briefConsultation" className="block text-lg font-medium text-gray-700 mb-2">Consulta Breve</label>
-              <textarea
-                id="briefConsultation"
-                name="briefConsultation"
-                rows="5"
-                value={formData.briefConsultation}
-                onChange={handleChange}
-                className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-all duration-200 text-lg resize-y"
-                placeholder="Describe brevemente tu consulta o el motivo de tu cita..."
-                required
-              ></textarea>
-                  
-            </div>
-            <div>
-              <label htmlFor="file" className="block text-lg font-medium text-gray-700 mb-2">Adjuntar Documento (PDF)</label>
-              <input
-                type="file"
-                id="file"
-                name="file"
-                accept=".pdf"
-                onChange={handleChange}
-                className="w-full text-lg text-gray-500 file:mr-4 file:py-2 file:px-4 file:rounded-full file:border-0 file:text-sm file:font-semibold file:bg-blue-50 file:text-blue-700 hover:file:bg-blue-100"
-              />
-              <p className="mt-2 text-sm text-gray-500">Solo archivos PDF. Para Google Drive, por favor comparte el enlace en la consulta breve.</p>
-            </div>
-            <button
-              type="submit"
-              className="w-full bg-blue-600 text-white px-6 py-3 rounded-xl text-xl font-semibold hover:bg-blue-700 transition-all duration-300 shadow-md transform hover:scale-105"
-            >
-              Enviar Consulta y Agendar Cita
-            </button>
+             <input type="hidden" name="form-name" value="contacto" />
+  
+             <p style={{ display: 'none' }}>
+               <label>
+                 No llenar este campo: <input name="bot-field" />
+               </label>
+             </p>
+
+             <div>
+               <label htmlFor="fullName">Nombre completo:</label>
+               <input
+                 type="text"
+                 id="fullName"
+                 name="fullName"
+                 required
+               />
+             </div>
+
+              <div>
+                <label htmlFor="phone">Teléfono:</label>
+                <input
+                  type="tel"
+                  id="phone"
+                  name="phone"
+                  required
+                />
+              </div>
+
+              <div>
+                <label htmlFor="briefConsultation">Consulta:</label>
+                <textarea
+                  id="briefConsultation"
+                  name="briefConsultation"
+                  rows="5"
+                  required
+                ></textarea>
+              </div>
+
+              <div>
+                <label htmlFor="file">Adjuntar Documento (PDF):</label>
+                <input
+                  type="file"
+                  id="file"
+                  name="file"
+                  accept=".pdf"
+                />
+           </div>
+
+  <button type="submit">Enviar Consulta y Agendar Cita</button>
+
           </form>
           <div className="mt-8 text-center">
             <p className="text-lg text-gray-700 mb-4">O contáctame directamente por WhatsApp:</p>
