@@ -21,67 +21,39 @@ const ContactForm = () => {
       <div className="max-w-3xl mx-auto">
         <h2 className="text-4xl font-bold text-center text-gray-900 mb-12">Consultas y Citas</h2>
         <div className="bg-gray-50 p-8 rounded-2xl shadow-lg border border-gray-200">
-          <form
-            name="contacto"
+            <form
+            action="https://api.web3forms.com/submit"
             method="POST"
-            action="/"
-            data-netlify="true"
-            netlify-honeypot="bot-field"
-            className="space-y-6"
-            encType="multipart/form-data"
-          >
-             <input type="hidden" name="form-name" value="contacto" />
-  
-             <p style={{ display: 'none' }}>
-               <label>
-                 No llenar este campo: <input name="bot-field" />
-               </label>
-             </p>
+  className="space-y-6"
+  encType="multipart/form-data"
+>
+  <input type="hidden" name="access_key" value="28f8b262-710a-468f-9cf1-7cef86dc5b6a" />
+  <input type="hidden" name="subject" value="Consulta desde formulario" />
+  <input type="hidden" name="from_name" value="Web de Solulex" />
 
-             <div>
-               <label htmlFor="fullName">Nombre completo:</label>
-               <input
-                 type="text"
-                 id="fullName"
-                 name="fullName"
-                 required
-               />
-             </div>
+  <div>
+    <label htmlFor="fullName">Nombre completo:</label>
+    <input type="text" id="fullName" name="fullName" required />
+  </div>
 
-              <div>
-                <label htmlFor="phone">Teléfono:</label>
-                <input
-                  type="tel"
-                  id="phone"
-                  name="phone"
-                  required
-                />
-              </div>
+  <div>
+    <label htmlFor="phone">Teléfono:</label>
+    <input type="tel" id="phone" name="phone" required />
+  </div>
 
-              <div>
-                <label htmlFor="briefConsultation">Consulta:</label>
-                <textarea
-                  id="briefConsultation"
-                  name="briefConsultation"
-                  rows="5"
-                  required
-                ></textarea>
-              </div>
+  <div>
+    <label htmlFor="briefConsultation">Consulta:</label>
+    <textarea id="briefConsultation" name="briefConsultation" rows="5" required></textarea>
+  </div>
 
-              <div>
-                <label htmlFor="file">Adjuntar Documento (PDF):</label>
-                <input
-                  type="file"
-                  id="file"
-                  name="file"
-                  accept=".pdf"
-                />
-           </div>
+  <div>
+    <label htmlFor="file">Adjuntar Documento (PDF):</label>
+    <input type="file" id="file" name="file" accept=".pdf" />
+  </div>
 
   <button type="submit">Enviar Consulta y Agendar Cita</button>
-
-          </form>
-          <div className="mt-8 text-center">
+</form>
+            <div className="mt-8 text-center">
             <p className="text-lg text-gray-700 mb-4">O contáctame directamente por WhatsApp:</p>
             <a
               href="https://wa.me/59160558168"
