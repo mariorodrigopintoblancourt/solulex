@@ -30,6 +30,11 @@ const ContactForm = () => {
             encType="multipart/form-data"
           >
             <input type="hidden" name="form-name" value="contacto" />
+            <p style={{ display: 'none' }}>
+              <label>
+                No llenar este campo: <input name="bot-field" />
+              </label>
+            </p>
             <p hidden>
               <label>No llenar: <input name="bot-field" /></label>
             </p>
