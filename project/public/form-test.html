@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Formulario de Prueba</title>
+</head>
+<body>
+  <h1>Formulario de Prueba para Netlify</h1>
+
+  <form name="contacto" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/">
+    <input type="hidden" name="form-name" value="contacto" />
+
+    <p style="display: none;">
+      <label>No llenar este campo: <input name="bot-field" /></label>
+    </p>
+
+    <p>
+      <label>Nombre completo:<br />
+        <input type="text" name="fullName" required />
+      </label>
+    </p>
+
+    <p>
+      <label>Teléfono:<br />
+        <input type="tel" name="phone" required />
+      </label>
+    </p>
+
+    <p>
+      <label>Consulta breve:<br />
+        <textarea name="briefConsultation" rows="5" required></textarea>
+      </label>
+    </p>
+
+    <p>
+      <label>Adjuntar documento (PDF):<br />
+        <input type="file" name="file" accept=".pdf" />
+      </label>
+    </p>
+
+    <p>
+      <button type="submit">Enviar Consulta y Agendar Cita</button>
+    </p>
+  </form>
+</body>
+</html>
