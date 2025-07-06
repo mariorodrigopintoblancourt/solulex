@@ -53,6 +53,59 @@ const ContactForm = () => {
 
   <button type="submit">Enviar Consulta y Agendar Cita</button>
 </form>
+  <div className="bg-white p-6 rounded-xl shadow-md space-y-4">
+  <details className="border border-gray-300 rounded-md p-4">
+    <summary className="cursor-pointer font-semibold text-lg text-blue-700">
+      📌 ¿Qué tipo de consultas puedo responder por mensaje?
+    </summary>
+    <div className="mt-2 text-gray-700">
+      <p>Si tu consulta es breve y general, por ejemplo:</p>
+      <ul className="list-disc list-inside ml-4 my-2">
+        <li>¿Qué dice la ley penal sobre las medidas cautelares?</li>
+        <li>¿Cuáles son los requisitos para iniciar un proceso de usucapión?</li>
+      </ul>
+      <p>Puedes escribirme por WhatsApp y te responderé con un mensaje corto y claro, sin costo alguno.</p>
+    </div>
+  </details>
+
+  <details className="border border-gray-300 rounded-md p-4">
+    <summary className="cursor-pointer font-semibold text-lg text-blue-700">
+      🧾 ¿Y si necesito una asesoría más completa?
+    </summary>
+    <div className="mt-2 text-gray-700 space-y-2">
+      <p>Si tu caso requiere una revisión detallada o necesitas orientación específica, puedes elegir entre dos modalidades de consulta:</p>
+      <p>💻 <strong>Consulta Virtual</strong> (Zoom, Google Meet o videollamada por WhatsApp)</p>
+      <ul className="list-disc list-inside ml-4">
+        <li>100 Bs la primera hora</li>
+        <li>80 Bs por cada hora adicional</li>
+      </ul>
+      <p>🏢 <strong>Consulta Presencial</strong> (en oficina)</p>
+      <ul className="list-disc list-inside ml-4">
+        <li>150 Bs la primera hora</li>
+        <li>100 Bs por cada hora adicional</li>
+      </ul>
+      <p>✔️ En ambas modalidades (virtual o presencial), puedes adjuntar documentos para su revisión.</p>
+      <ul className="list-disc list-inside ml-4">
+        <li>Hasta 15 páginas: sin costo adicional</li>
+        <li>A partir de la página 16: se cobrará un adicional de 3 Bs por hoja</li>
+      </ul>
+      <p>📌 La revisión de documentos no aplica para las consultas breves por mensaje.</p>
+    </div>
+  </details>
+
+  <details className="border border-gray-300 rounded-md p-4">
+    <summary className="cursor-pointer font-semibold text-lg text-blue-700">
+      📲 ¿Cómo agendar una consulta?
+    </summary>
+    <div className="mt-2 text-gray-700">
+      <p>Solo tienes que escribirme por WhatsApp incluyendo la siguiente información:</p>
+      <ul className="list-disc list-inside ml-4 my-2">
+        <li>Tu nombre completo</li>
+        <li>Tu número de contacto</li>
+        <li>Una descripción breve de tu consulta</li>
+        <li>Indica si deseas atención:
+          <ul className="list-disc list-inside ml-6">
+            <li>Virtual (Zoom
             <div className="mt-8 text-center">
             <p className="text-lg text-gray-700 mb-4">O contáctame directamente por WhatsApp:</p>
             <a
