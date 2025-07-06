@@ -33,7 +33,7 @@ const ContactSection = () => {
           </div>
           <div className="md:w-1/2">
             <p className="text-base sm:text-lg text-gray-700 leading-relaxed mb-4">
-              Estoy a tu disposición para cualquier consulta legal o para agendar una cita. Puedes contactarme a través del formulario, por WhatsApp o visitando mi oficina.
+              Estoy a tu disposición para cualquier consulta legal o para agendar una cita. Puedes contactarme por WhatsApp o visitando mi oficina.
             </p>
             <p className="text-base sm:text-lg text-gray-700 leading-relaxed mb-4">
               Dirección: Ed. DeCol, Piso 15, Oficina 1503, Zona Central, La Paz
