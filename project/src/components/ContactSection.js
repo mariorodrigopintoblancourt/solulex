@@ -50,7 +50,7 @@ const ContactSection = () => {
               Ver en Google Maps
             </a>
             <a
-              href="https://www.google.com/maps/place/YOUR_GOOGLE_BUSINESS_PROFILE_LINK_HERE"
+              href="https://maps.app.goo.gl/deNaGYZThfdxN4Xv6"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center text-blue-600 hover:underline text-base sm:text-lg font-semibold ml-4"
