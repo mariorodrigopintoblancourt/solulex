@@ -42,7 +42,7 @@ const ContactSection = () => {
               Celular: 60558168
             </p>
             <a
-              href="https://www.google.com/maps/search/?api=1&query=Edificio+DeCol,+Piso+15,+Oficina+1503,+La+Paz"
+              href="https://www.google.com/maps/search/?api=1&query=Soluciones+Legales,+Sol+Lex,+Edificio+DeCol,+Piso+15,+Oficina+1503,+La+Paz"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center text-blue-600 hover:underline text-base sm:text-lg font-semibold"
