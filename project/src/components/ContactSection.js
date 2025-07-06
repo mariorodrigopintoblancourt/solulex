@@ -61,65 +61,69 @@ const ContactSection = () => {
         </div>
         <div className="bg-gray-50 p-6 sm:p-8 rounded-2xl shadow-lg border border-gray-200">
           <h3 className="text-2xl sm:text-3xl font-bold text-center text-gray-900 mb-6">Consultas y Citas</h3>
-          <form onSubmit={handleSubmit} className="space-y-6">
-            <div>
-              <label htmlFor="fullName" className="block text-base sm:text-lg font-medium text-gray-700 mb-2">Nombre y Apellidos</label>
-              <input
-                type="text"
-                id="fullName"
-                name="fullName"
-                value={formData.fullName}
-                onChange={handleChange}
-                className="w-full px-4 py-2 sm:py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-all duration-200 text-base sm:text-lg"
-                placeholder="Tu nombre completo"
-                required
-              />
-            </div>
-            <div>
-              <label htmlFor="phone" className="block text-base sm:text-lg font-medium text-gray-700 mb-2">Teléfono de Contacto</label>
-              <input
-                type="tel"
-                id="phone"
-                name="phone"
-                value={formData.phone}
-                onChange={handleChange}
-                className="w-full px-4 py-2 sm:py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-all duration-200 text-base sm:text-lg"
-                placeholder="Ej: +591 60558168"
-                required
-              />
-            </div>
-            <div>
-              <label htmlFor="briefConsultation" className="block text-base sm:text-lg font-medium text-gray-700 mb-2">Consulta Breve</label>
-              <textarea
-                id="briefConsultation"
-                name="briefConsultation"
-                rows="5"
-                value={formData.briefConsultation}
-                onChange={handleChange}
-                className="w-full px-4 py-2 sm:py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-all duration-200 text-base sm:text-lg resize-y"
-                placeholder="Describe brevemente tu consulta o el motivo de tu cita..."
-                required
-              ></textarea>
-            </div>
-            <div>
-              <label htmlFor="file" className="block text-base sm:text-lg font-medium text-gray-700 mb-2">Adjuntar Documento (PDF)</label>
-              <input
-                type="file"
-                id="file"
-                name="file"
-                accept=".pdf"
-                onChange={handleChange}
-                className="w-full text-base sm:text-lg text-gray-500 file:mr-4 file:py-2 file:px-4 file:rounded-full file:border-0 file:text-sm file:font-semibold file:bg-blue-50 file:text-blue-700 hover:file:bg-blue-100"
-              />
-              <p className="mt-2 text-xs sm:text-sm text-gray-500">Solo archivos PDF. Para Google Drive, por favor comparte el enlace en la consulta breve.</p>
-            </div>
-            <button
-              type="submit"
-              className="w-full bg-blue-600 text-white px-6 py-3 sm:px-8 sm:py-4 rounded-xl text-base sm:text-xl font-semibold hover:bg-blue-700 transition-all duration-300 shadow-md transform hover:scale-105"
-            >
-              Enviar Consulta y Agendar Cita
-            </button>
-          </form>
+         <div className="bg-white p-6 rounded-xl shadow-md space-y-4">
+  <details className="border border-gray-300 rounded-md p-4">
+    <summary className="cursor-pointer font-semibold text-lg text-blue-700">
+      📌 ¿Qué tipo de consultas puedo responder por mensaje?
+    </summary>
+    <div className="mt-2 text-gray-700">
+      <p>Si tu consulta es breve y general, por ejemplo:</p>
+      <ul className="list-disc list-inside ml-4 my-2">
+        <li>¿Qué dice la ley penal sobre las medidas cautelares?</li>
+        <li>¿Cuáles son los requisitos para iniciar un proceso de usucapión?</li>
+      </ul>
+      <p>Puedes escribirme por WhatsApp y te responderé con un mensaje corto y claro, sin costo alguno.</p>
+    </div>
+  </details>
+
+  <details className="border border-gray-300 rounded-md p-4">
+    <summary className="cursor-pointer font-semibold text-lg text-blue-700">
+      🧾 ¿Y si necesito una asesoría más completa?
+    </summary>
+    <div className="mt-2 text-gray-700 space-y-2">
+      <p>Si tu caso requiere una revisión detallada o necesitas orientación específica, puedes elegir entre dos modalidades de consulta:</p>
+      <p>💻 <strong>Consulta Virtual</strong> (Zoom, Google Meet o videollamada por WhatsApp)</p>
+      <ul className="list-disc list-inside ml-4">
+        <li>100 Bs la primera hora</li>
+        <li>80 Bs por cada hora adicional</li>
+      </ul>
+      <p>🏢 <strong>Consulta Presencial</strong> (en oficina)</p>
+      <ul className="list-disc list-inside ml-4">
+        <li>150 Bs la primera hora</li>
+        <li>100 Bs por cada hora adicional</li>
+      </ul>
+      <p>✔️ En ambas modalidades (virtual o presencial), puedes adjuntar documentos para su revisión.</p>
+      <ul className="list-disc list-inside ml-4">
+        <li>Hasta 15 páginas: sin costo adicional</li>
+        <li>A partir de la página 16: se cobrará un adicional de 3 Bs por hoja</li>
+      </ul>
+      <p>📌 La revisión de documentos no aplica para las consultas breves por mensaje.</p>
+    </div>
+  </details>
+
+  <details className="border border-gray-300 rounded-md p-4">
+    <summary className="cursor-pointer font-semibold text-lg text-blue-700">
+      📲 ¿Cómo agendar una consulta?
+    </summary>
+    <div className="mt-2 text-gray-700">
+      <p>Solo tienes que escribirme por WhatsApp incluyendo la siguiente información:</p>
+      <ul className="list-disc list-inside ml-4 my-2">
+        <li>Tu nombre completo</li>
+        <li>Tu número de contacto</li>
+        <li>Una descripción breve de tu consulta</li>
+        <li>Indica si deseas atención:
+          <ul className="list-disc list-inside ml-6">
+            <li>Virtual (Zoom, Google Meet o videollamada por WhatsApp)</li>
+            <li>Presencial (en oficina)</li>
+          </ul>
+        </li>
+        <li>Si corresponde, adjunta los documentos que quieras que revise (máx. 15 páginas sin costo)</li>
+      </ul>
+      <p>Una vez que reciba tu mensaje, te enviaré el código QR para que puedas realizar el pago y así confirmar la cita.</p>
+    </div>
+  </details>
+</div>
+
           <div className="mt-6 sm:mt-8 text-center">
             <p className="text-base sm:text-lg text-gray-700 mb-4">O contáctame directamente por WhatsApp:</p>
             <a
