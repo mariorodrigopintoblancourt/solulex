@@ -87,14 +87,14 @@ const ContactSection = () => {
         <li>100 Bs la primera hora</li>
         <li>80 Bs por cada hora adicional</li>
       </ul>
-      <p>🏢 <strong>Consulta Presencial</strong> (en oficina)</p>
+      <p>🏢 <strong>Consulta Presencial</strong> (en oficina PREVIA CITA)</p>
       <ul className="list-disc list-inside ml-4">
         <li>150 Bs la primera hora</li>
         <li>100 Bs por cada hora adicional</li>
       </ul>
       <p>✔️ En ambas modalidades (virtual o presencial), puedes adjuntar documentos para su revisión.</p>
       <ul className="list-disc list-inside ml-4">
-        <li>Hasta 15 páginas: sin costo adicional</li>
+        <li>Hasta 15 hojas: sin costo adicional</li>
         <li>A partir de la página 16: se cobrará un adicional de 3 Bs por hoja</li>
       </ul>
       <p>📌 La revisión de documentos no aplica para las consultas breves por mensaje.</p>
